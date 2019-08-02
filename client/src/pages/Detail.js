@@ -44,6 +44,11 @@ class Detail extends Component {
             <Link to="/">← Back to Authors</Link>
           </Col>
         </Row>
+        <Row>
+          <Col size="md-2">
+            <Link to="/search">← Search Books</Link>
+          </Col>
+        </Row>
       </Container>
     );
   }

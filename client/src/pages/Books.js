@@ -126,6 +126,11 @@ class Books extends Component {
             )}
           </Col>
         </Row>
+        <Row>
+          <Col size="md-2">
+            <Link to="/search">← Search Books</Link>
+          </Col>
+        </Row>
       </Container>
     );
   }
