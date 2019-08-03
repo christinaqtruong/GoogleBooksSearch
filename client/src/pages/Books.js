@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
+// import SearchForm from "../components/SearchForm/"
 
 class Books extends Component {
   state = {
@@ -127,7 +128,7 @@ class Books extends Component {
           </Col>
         </Row>
         <Row>
-          <Col size="md-2">
+          <Col size="md-3">
             <Link to="/search">← Search Books</Link>
           </Col>
         </Row>

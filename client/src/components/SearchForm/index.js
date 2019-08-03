@@ -1,9 +1,12 @@
 import React from "react";
 import "./style.css";
+import { Link } from "react-router-dom";
+import { Col, Row, Container } from "../Grid";
 
 // Using the datalist element we can create autofill suggestions based on the props.breeds array
 function SearchForm(props) {
   return (
+    <Container>
     <form className="search">
       <div className="form-group">
         <label htmlFor="book ">Book Title:</label>
@@ -17,7 +20,7 @@ function SearchForm(props) {
           placeholder="Search for a book"
           id="book"
         />
-        <datalist id="breeds">
+        <datalist id="books">
           {props.books.map(book => (
             <option value={book} key={book} />
           ))}
@@ -27,6 +30,12 @@ function SearchForm(props) {
         </button>
       </div>
     </form>
+    <Row>
+          <Col size="md-3">
+            <Link to="/books">← View Saved Books</Link>
+          </Col>
+        </Row>
+    </Container>
   );
 }
 
